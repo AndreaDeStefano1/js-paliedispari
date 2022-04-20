@@ -1,0 +1,17 @@
+body{
+  background-color: rgb(39, 148, 216);
+}
+.wrapper{
+  height: 100vh;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
+
+.sfondo{
+  background-color: white;
+  border-radius: 10px;
+}
