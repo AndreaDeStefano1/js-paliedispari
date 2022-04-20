@@ -9,7 +9,7 @@ let bool;
 verficaBtn.addEventListener('click',isPalindrom);
 verficaBtn.addEventListener('click',printMessage);
 
-function isPalindrom(word){
+function isPalindrom(){
   word = document.getElementById('word-check').value
   if(word === word.split('').reverse().join('')){
     return bool = true
