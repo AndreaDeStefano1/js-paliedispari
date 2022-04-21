@@ -38,9 +38,7 @@ function tot(num1 , num2){
 // funzione dichiarazione vincitore
 function winnerDeclare(num){
   console.log(num);
-  if(num % 2 == 0 && getValue('word-check') == 'pari'){
-    return 'Hai vinto'
-  }else if(num % 2 != 0 && getValue('word-check') == 'dispari'){
+  if((num % 2 == 0 && getValue('word-check') == 'pari') ||(num % 2 != 0 && getValue('word-check') == 'dispari')){
     return 'Hai vinto'
   }else if((num % 2 != 0 && getValue('word-check') == 'pari') || (num % 2 == 0 && getValue('word-check') == 'dispari')){
     return 'Hai perso'
