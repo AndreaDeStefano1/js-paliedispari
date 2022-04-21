@@ -6,7 +6,7 @@ let output = document.querySelector('.esito-verifica');
 let verficaBtn = document.getElementById('bottone-verifica');
 let word = '';
 let bool;
-verficaBtn.addEventListener('click',isPalindrom);
+verficaBtn.addEventListener('click',isPalindromV2);
 verficaBtn.addEventListener('click',printMessage);
 
 function isPalindrom(){
@@ -31,3 +31,21 @@ function printMessage(){
   }
 }
 
+function giraParola(str){
+  let reverseString = '';
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverseString += str[i];
+  }
+  return reverseString;
+}
+function isPalindromV2(){
+  const word = document.getElementById('word-check').value;
+  const reverseWord = giraParola(word);
+
+  if (reverseWord == word){
+    return bool = true;
+  }else{
+    return bool = false;
+  }
+}
